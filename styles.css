@@ -1,0 +1,35 @@
+body {
+    background-color: #191919; /* Dark grey background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-size: 5rem;
+}
+
+.prevent-select {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+    cursor: default; /* Default cursor */
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    
+    40% {
+        transform: translateY(-30px);
+    }
+    
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+.moyai:hover {
+    animation: bounce 2s ease infinite;
+}
